@@ -189,7 +189,18 @@ a {
     .container-xl {
         max-width: 1140px;
     }
-} */
+} 
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px;
+    }
+}*/
 /* --- Slider Category --- */
 
 body {
@@ -362,4 +373,15 @@ a {
     .cate-grid .item {
         width: 23%;
     }   
+}
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px;
+    }
 }
