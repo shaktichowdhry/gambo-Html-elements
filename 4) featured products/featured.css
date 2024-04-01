@@ -153,7 +153,7 @@ body {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
 }
 
-span.like-icon {
+span.uil-heart {
     color: #f69733;
     font-size: 18px;
     position: absolute;
@@ -170,41 +170,51 @@ span.like-icon {
     transition: all 0.4s;
 }
 
-.like-icon:before,
-.like-icon:after {
+.uil-heart:before {
     transition: opacity 0.3s, transform 0.4s cubic-bezier(.0, -.41, .19, 2.5);
-    font-family: "Font Awesome 5 Free";
+    font-family: "unicons-line";
     position: absolute;
     right: 0;
     left: 0;
     text-align: center;
-    top: 0px;
+    top: 8px;
 }
 
-.like-icon:before {
-    content: "\f004";
+.uil-heart:after {
+    transition: opacity 0.3s, transform 0.4s cubic-bezier(.0, -.41, .19, 2.5);
+    font-family: "unicons-line";
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    top: 1px;
+}
+
+.uil-heart:before {
+    content: '\e85d';
+    /* content: '\2665'; */
     transform: scale(0.95);
 }
 
-.like-icon:after {
-    content: "\f004";
+.uil-heart:after {
+    content: '\2665';
     opacity: 0;
     transform: scale(0.3);
     font-weight: 900;
 }
 
-.like-icon.liked:after {
+.uil-heart.liked:after {
     opacity: 1;
-    transform: scale(0.95);
+    transform: scale(1.2);
 }
 
-.like-icon:hover,
-.like-icon.liked {
+.uil-heart:hover,
+.uil-heart.liked {
     background-color: #f69733;
     color: #fff;
 }
 
-.like-icon.liked:before {
+.uil-heart.liked:before {
     opacity: 0;
 }
 
@@ -480,7 +490,10 @@ span.like-icon {
 .quantity.buttons_added .plus:focus {
     outline: none;
 }
-
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
 
 .cart-item-price {
     font-size: 18px;
