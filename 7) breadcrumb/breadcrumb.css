@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif !important;
+    box-sizing: border-box;
+}
+
+.gambo-Breadcrumb {
+    padding: 30px 0;
+    background: #2b2f4c;
+    position: relative;
+}
+
+.gambo-Breadcrumb:before {
+    content: "";
+    background: url(../images/career/default.jpg) no-repeat center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    opacity: 0.1;
+}
+
+.gambo-Breadcrumb .breadcrumb {
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.8);
+}
+
+.gambo-Breadcrumb .breadcrumb .breadcrumb-item a {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.gambo-Breadcrumb .breadcrumb .breadcrumb-item a:hover {
+    color: rgba(255,255,255,1) !important;
+}
+
+.gambo-Breadcrumb .breadcrumb .breadcrumb-item.active {
+    color: #fff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(255,255,255,0.8) !important;
+}
