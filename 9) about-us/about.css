@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f7f7f7 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.life-gambo {
+    padding: 59px 0;
+}
+
+.default-title {
+    text-align: center;
+	padding-bottom: 8px;
+}
+
+.default-title h2 {
+    font-size: 24px;
+    color: #2b2f4c;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.default-title p {
+    line-height: 24px;
+    font-weight: 400;
+    color: #3e3f5e;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.dd-content {
+	margin-top: 30px;
+	width: 100%;
+}
+
+
+.about-img {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.about-img img {
+    width: 60%;
+}
+
+.about-steps-group {
+    padding: 29px 0 59px;
+    background: #fff;
+}
+
+.about-step {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.about-step-img img {
+    height: 60px;
+}
+
+.about-step h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2b2f4c;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.about-step p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3e3f5e;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+	line-height: 26px;
+}
+
+.how-order-gambo {
+    padding:  60px 0px;
+}
+
+.how-order-steps {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    background: #fff;
+    height: 203px;
+	border-radius: 10px;
+}
+
+.how-order-steps h4 {
+    color: #2b2f4c;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+	margin-top: 21px;
+}
+
+.how-order-icon i {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background: #f55d2c;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 100%;
+    padding: 14px 0;
+	text-align: center;
+}
