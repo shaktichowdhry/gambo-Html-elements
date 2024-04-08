@@ -8,8 +8,8 @@
 body {
     font-family: 'Roboto', sans-serif !important;
     background-color: #f7f7f7 !important;
-    line-height: 21px;
-    font-size: 14px;
+    line-height: 21px !important;
+    font-size: 14px !important;
 }
 
 .container,
@@ -131,10 +131,13 @@ ul {
 }
 
 .lgn_input {
-    padding: 0 1rem 0 3rem !important;
+    padding: 0 14px 0 42px !important;
     height: 50px !important;
 }
-
+.h_50 {
+    height: 50px !important;
+    line-height: 50px !important;
+}
 .pos_rel {
 	position: relative;
 }
@@ -282,4 +285,170 @@ label.control-label {
     padding: 0;
 	margin-left: auto;
     letter-spacing: 0.3px;
+}
+
+.checout-address-step .form-control {
+    font-size: 14px;
+	height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #2b2f4c;
+    border: 1px solid #efefef;
+	position: relative;
+	padding: 0 1rem 0 1rem;
+	border-radius: 5px !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+	border: 1px solid #f55d2c !important;
+}
+
+
+/* --- Sign In --- */
+
+.sign-inup {
+    padding: 80px 0;
+}
+
+.sign-form {
+    display: block;
+    width: 100%;
+}
+
+.sign-img {
+    background: #4576b4;
+    padding: 50px;
+    border-radius: 5px 0 0 5px;
+}
+
+.sign-img img {
+    width: 100%;
+}
+
+.sign-inner {
+    padding: 0;
+}
+
+.sign-logo {
+    width: 100%;
+	text-align: center;
+}
+
+.sign-logo img {
+    width: 150px;
+}
+
+.form-dt {
+    margin-top: 50px;
+    border: 1px solid #efefef;
+	position: relative;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.form-inpts {
+	padding: 38px 30px 0;
+}
+
+.form-title {
+    text-align: center;
+	margin-bottom: 37px;
+}
+
+.form-title h6 {
+	font-weight: 700;
+	color: #2b2f4c;
+	font-size: 18px;
+}
+
+.lgn_input {
+    padding: 0 14px 0 42px !important;
+    height: 50px !important;
+}
+
+.pos_rel {
+	position: relative;
+}
+
+.lgn_icon {
+    position: absolute;
+    top: 14px;
+    left: 3%;
+    font-size: 18px;
+    color: #2b2f4c;
+}
+
+.form-control:focus+.lgn_icon  {
+	color: #f55d2c;
+}
+
+.login-btn {
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    color: #fff;
+    background: #f55d2c;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.signup-link {
+	margin-top: 30px;
+	border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding: 1.5rem;
+	background: #f55d2c;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+	background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+}
+
+.signup-link p {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+.signup-link p a {
+    color: #fff;
+    font-size: 12px;
+    background: #2b2f4c;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.signup-link p a:hover {
+    color: #fff !important;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+}
+
+.sign-inup .copyright-text {
+    color: #2b2f4c;
+}
+
+.password-forgor {
+	text-align: center;
+}
+
+.password-forgor a {
+    display: block;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2b2f4c;
+}
+
+.password-forgor a:hover {
+    color: #f55d2c !important;
 }
