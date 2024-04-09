@@ -50,7 +50,24 @@ body {
     padding-top: 121px;
     padding-bottom: 64px;
 }
-
+a {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+a:hover {
+    color: inherit !important;
+}
+.hover-btn:hover {
+    background: #f55d2c;
+    color: #fff !important;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+}
 /* --- User Dashboard Page --- */
 
 .dashboard-group {
@@ -423,6 +440,12 @@ body {
 
 .wallet-list {
     padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wllt-body {
+    padding: 20px 20px 0;
 }
 
 .wallet-list li {
@@ -700,6 +723,7 @@ body {
 .delivery-man a:hover {
     color: #f55d2c !important;
 	text-decoration: underline !important;
+   
 }
 
 .order-bill-slip {
