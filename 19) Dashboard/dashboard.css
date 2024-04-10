@@ -1215,6 +1215,278 @@ ol, ul {
 }
 
 
+.total-checkout-group {
+    padding: 20px 20px 0;
+	border-top: 1px solid #efefef;
+    margin-top: 10px;
+}
+
+.cart-total-dil {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.cart-total-dil h4 {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2b2f4c;
+    line-height: 24px;
+}
+
+.cart-total-dil span {
+	color: #8f91ac;
+    font-size: 16px;
+    margin-left: auto;
+    font-weight: 400;
+	line-height: 24px;
+}
+
+.main-total-cart {
+    display: flex;
+    padding: 20px !important;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.saving-total {
+    padding: 20px 20px 0;
+}
+
+.main-total-cart h2 {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b2f4c;
+    line-height: 24px;
+}
+
+.main-total-cart span {
+	color: #f55d2c;
+    font-size: 18px;
+    margin-left: auto;
+    font-weight: 700;
+	line-height: 24px;
+}
+label.control-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2b2f4c;
+}
+.control-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2b2f4c;
+    margin-bottom: 0.8rem;
+}
+.swdh19 {
+    width: 100%;
+}
+.ui[class*="left icon"].swdh19.input>input {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    height: 40px;
+    border-radius: 5px !important;
+}
+.ui.search .prompt {
+    border-radius: .3rem !important;
+    width: 100%;
+}
+.ui.input>input {
+    font-size: 14px;
+    font-weight: 400 !important;
+    background: #fff;
+    border: 1px solid #efefef !important;
+    color: #2b2f4c !important;
+    border-radius: 5px !important;
+}
+.ui.input>input {
+    font-family: 'Roboto', sans-serif !important;
+}
+input[type=text] {
+    color: #2b2f4c !important;
+}
+
+
+.main-form .ck-select .btn-light {
+    min-height: 50px !important;
+    height: 50px !important;
+    padding: 14px 20px !important;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100% !important;
+}
+
+.bootstrap-select .dropdown-menu.inner {
+    padding: 0px !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    display: inline-block;
+}
+
+.main-form .bootstrap-select .dropdown-toggle:focus, .main-form .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+    outline: none !important;
+    outline: none !important;
+    outline-offset: -2px;
+	border-color: #f55d2c !important;
+	box-shadow: none !important;
+}
+
+.bootstrap-select .dropdown-item.active, .bootstrap-select .dropdown-item:active {
+	border-radius: 0 !important;
+	background: #f55d2c;
+	color: #fff !important;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+	background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+}
+
+.bootstrap-select.dropdown-item.active, .bootstrap-select .dropdown-item:active {
+    color: #fff !important;
+	border-radius: 0 !important;
+    text-decoration: none;
+    background: #f55d2c;
+	color: #fff !important;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+	background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+}
+
+.bootstrap-select .dropdown-item {
+    color: #000 !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+}
+
+.bootstrap-select>.dropdown-toggle:after {
+    margin-left: 0 !important;
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    background-color: #fff;
+}
+.scrollstyle_4::-webkit-scrollbar {
+    width: 4px;
+    background-color: #f1f1f1;
+}
+
+.scrollstyle_4::-webkit-scrollbar-thumb {
+    background-color: #e5e5e5;
+}
+
+.scrollstyle_4::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    background-color: #F5F5F5;
+}
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.next-btn16 {
+    height: 40px;
+    line-height: 38px;
+    padding: 0px 30px;
+    border: 1px solid #f55d2c;
+    background: #f55d2c;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* whislist */
+
+.cart-item {
+	display: flex;
+	padding: 20px;
+	border-bottom: 1px solid #efefef;
+}
+
+.cart-item:last-child {
+	border-bottom: 0;
+}
+
+
+.cart-product-img {
+    width: 130px;
+	position: relative;
+}
+
+.cart-product-img img {
+    width: 100%;
+    border-radius: 10px;
+	border: 1px solid #f7f7f7;
+}
+
+.offer-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    background: #f55d2c;
+    padding: 1px 10px 0px;
+    border-radius: 3px;
+    line-height: 20px;
+}
+
+.cart-text {
+	margin-left: 20px;
+	width: 100%;
+	position: relative;
+}
+
+.cart-text h4 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #2b2f4c;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.cart-close-btn {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    background: transparent;
+    border: 0;
+    font-size: 18px;
+    color: #2b2f4c;
+}
+
+.cart-close-btn:hover {
+    color: #f55d2c;
+}
+
+.cart-item-price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #f55d2c;
+    text-align: right;
+	display: inline-flex;
+	margin-left: auto;
+}
+
+.cart-item-price span {
+    color: #c7c7c7;
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
 @media (min-width: 576px) {
 
     .container,
