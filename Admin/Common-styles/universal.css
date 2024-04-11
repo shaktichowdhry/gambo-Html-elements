@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-color: #f7f7f7 !important;
+    line-height: 21px;
+    font-size: 14px;
+    height: 100%;
+    font-weight: 400;
+    color: #2b2f4c;
+    text-align: left; 
+}
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+/* === Body Scrollbar === */
+
+.sb-sidenav-menu::-webkit-scrollbar {
+    width: 8px;
+    height: 14px;
+}
+.sb-sidenav-menu::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+.sb-sidenav-menu::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.sb-sidenav-menu::-webkit-scrollbar-thumb {
+    height: 4px;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    -webkit-border-radius: 7px;
+    background-color: rgba(245,93,44,.8);
+    -webkit-box-shadow: inset -1px -1px 0 rgba(0,0,0,.05), inset 1px 1px 0 rgba(0,0,0,.05);
+}
+/* html elements */
+ul {
+    padding-left: 0 !important;
+}
+ol, ul {
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+
+/* breadcrumbs */
+.breadcrumb-item.active {
+    color: #f55d2c !important;
+}
+
+.breadcrumb-item {
+    color: #2b2f4c !important;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.breadcrumb-item a {
+    color: #2b2f4c !important;
+}
+
+.breadcrumb-item a:hover {
+    color: #f55d2c !important;
+	text-decoration: none !important;
+}
