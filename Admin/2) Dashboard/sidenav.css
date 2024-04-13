@@ -81,6 +81,7 @@
     padding-left: 225px;
     top: 56px;
     background-color: #f7f7f7 !important;
+    width: 100%;
 }
 
 #layoutError {
