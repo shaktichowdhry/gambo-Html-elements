@@ -20,7 +20,10 @@ body {
     padding-right: 1.5rem !important;
 }
 .mt-30 {
-    margin-top: 30px;
+    margin-top: 30px !important;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
 }
 .mt-4 {
     margin-top: 1.5rem !important;
@@ -55,7 +58,13 @@ ol, ul {
     list-style: none;
     margin-bottom: 0 !important;
 }
-
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+small, .small {
+    font-size: 80%;
+    font-weight: 400;
+}
 /* breadcrumbs */
 .breadcrumb-item.active {
     color: #f55d2c !important;
