@@ -232,3 +232,20 @@ input[type=radio]:checked:before {
 .cate-img img {
     width: 40px;
 }
+
+
+/* all products */
+.cate-img-5 {
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    text-align: center;
+    padding: 3px 0;
+    background: #f9f9f9;
+    width: 70px;
+}
+.cate-img-5 img {
+    width: 60px;
+    border-radius: 3px;
+}
+
+/* single product view */
