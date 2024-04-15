@@ -13,17 +13,17 @@ Highcharts.chart('earningGraph', {
 	subtitle: {
 		text: 'Show monthly wise income & order graph.'
 	},
-    legend: {
-        layout: 'vertical',
-        align: 'left',
-        verticalAlign: 'top',
-        x: 0,
-        y: 0,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
-    },
+    // legend: {
+    //     layout: 'vertical',
+    //     align: 'left',
+    //     verticalAlign: 'top',
+    //     x: 0,
+    //     y: 0,
+    //     floating: true,
+    //     borderWidth: 1,
+    //     backgroundColor:
+    //         Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
+    // },
     xAxis: {
         categories: ['January','February','March','April','May','June','July','August','September','October','November','December'],
 		title: {
