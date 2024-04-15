@@ -323,6 +323,29 @@ input[type=radio]:checked:before {
     text-align: right;
     width: 50%;
 }
+/* shop view  */
+.shop-content-left {
+    display: flex;
+    width: 100%;
+    align-items: start;
+}
+.shop-dt-left {
+    margin-left: 20px;
+}
+.shop-dt-left h4 {
+    color: #2b2f4c;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-align: left;
+}
+.shop-dt-left span {
+    color: #3e3f5e;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
 /* shop products */
 .news-content-right {
     border-top: 0;
