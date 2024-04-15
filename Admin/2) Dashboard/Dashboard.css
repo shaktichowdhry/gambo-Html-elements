@@ -662,3 +662,249 @@ div#editor {
 .add-produc-imgs li {
     display: inline-block;
 }
+/* add pages */
+.post-form {
+    padding: 0 30px 30px;
+    border-top: 0;
+}
+.fea-img {
+    position: relative;
+    margin-top: 20px;
+}
+.fea-img img {
+    width: 100%;
+    border-radius: 3px;
+}
+.img-add {
+    display: block;
+    margin-top: 20px;
+}
+.img-add [type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    float: left;
+}
+.img-add [type="file"] + label {
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    transition: all 0.3s;
+    vertical-align: middle;
+    margin: 0;
+    background: #f55d2c;
+    color: #fff;
+    height: 40px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+/* add menu */
+
+.panel-group {
+    width: 100%;
+    float: left;
+	margin-top: 0;
+}
+
+.panel-title {
+    vertical-align: middle;
+	padding: 0 20px;
+	background: #fff;
+}
+
+.panel-default {
+    float: left;
+    width: 100%;
+	border-top: 1px solid #efefef;
+}
+
+.panel-default:first-child {
+	border-top: 0;
+}
+
+.panel-body {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3e3f5e;
+    line-height: 24px;
+    padding: 20px;
+    text-align: left;
+    background: #fff;
+	border-top: 1px solid #efefef;
+}
+
+.panel-title > a:before {
+    float: right !important;
+    content:"\-";
+    padding-right: 0px;
+	font-size: 20px;
+	padding-top: 2px;
+}
+
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\+";
+}
+
+.panel-title a {
+	font-size: 16px;
+	font-weight: 500;
+	color: #2b2f4c;
+	padding: 15px 0 18px;
+    display: block;
+	line-height: 26px;
+}
+
+.panel-title > a:hover, 
+.panel-title > a:active,
+.panel-title > a:focus  {
+    text-decoration:none;
+	color: #f55d2c !important;
+}
+
+.control-label {
+    margin-bottom: 0;
+	cursor: pointer;
+	font-weight: 400;
+	color: #2b2f4c;
+	font-size: 14px;
+}
+
+.add-menu-list {
+    list-style: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+	margin-bottom: 0;
+}
+
+.add-menu-list li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-menu-list li:last-child {
+    margin-bottom: 0;
+}
+
+.menu-search {
+    margin-bottom: 20px;
+}
+
+.menu-configs h4 {
+	font-weight: 500;
+	font-size: 16px;
+	color: #2b2f4c;
+}
+
+.menu-save-btn {
+    padding: 15px 20px;
+    text-align: right;
+    border-top: 1px solid #efefef;
+}
+
+.panel-group-1 {
+    width: 100%;
+    float: left;
+	margin-top: 0;
+}
+
+.panel-title-1 {
+    vertical-align: middle;
+	padding: 0 20px;
+	background: #f9f9f9;
+	float: left;
+    width: 100%;
+}
+
+.panel-default-1 {
+    float: left;
+    width: 100%;
+	border: 1px solid #efefef;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+
+.panel-body-1 {
+	float: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3e3f5e;
+    line-height: 24px;
+    padding: 20px;
+    text-align: left;
+    background: #fff;
+	border-top: 1px solid #efefef;
+}
+
+.panel-title-1 > a:before {
+    float: right !important;
+    content:"\-";
+    padding-right: 0px;
+	font-size: 20px;
+	padding-top: 2px;
+}
+
+.panel-title-1 > a.collapsed:before {
+    float: right !important;
+    content:"\+";
+}
+
+.panel-title-1 a {
+	font-size: 14px;
+	font-weight: 500;
+	color: #2b2f4c;
+	padding: 5px 0;
+    display: block;
+	line-height: 26px;
+	float: left;
+    width: 100%;
+}
+
+.panel-title-1 > a:hover, 
+.panel-title-1 > a:active,
+.panel-title-1 > a:focus  {
+    text-decoration:none;
+	color: #2b2f4c !important;
+}
+
+.attr-menu-left {
+    float: left;
+}
+
+.attr-menu-right {
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #3e3f5e;
+    font-weight: 500;
+}
+
+.bb-bottom {
+    margin-top: 5px;
+    float: left;
+    width: 100%;
+}
+
+.menu-delete {
+    font-size: 14px;
+    color: #2b2f4c;
+    font-weight: 500;
+}
+
+.menu-delete:hover {
+    color: #f55d2c !important;
+    text-decoration: none !important;
+}
+
+.attr-orgin-right {
+    float: right;
+    font-size: 14px;
+    color: #3e3f5e;
+    font-weight: 500;
+}
