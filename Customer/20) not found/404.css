@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7 !important;
+    line-height: 21px;
+    font-size: 14px;    
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.wrapper {
+    padding-top: 121px;
+    padding-bottom: 64px;
+}
+a {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+a:hover {
+    color: inherit !important;
+}
+.back-to-home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    color: #fff;
+    background: #f55d2c;
+    border-radius: 5px;
+    font-weight: 500;
+  
+}
+.hover-btn:hover {
+    background: #f55d2c;
+    color: #fff !important;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+}
+.display-404 {
+    font-family: "Rubik", sans-serif !important;
+    font-weight: 600;
+    font-style: italic;
+    color: #f7f7f7;
+    font-size: 10rem;
+    text-shadow: -0.0625rem 0 #fe696a, 0 0.0625rem #fe696a, 0.0625rem 0 #fe696a, 0 -0.0625rem #fe696a;
+}
+.p-404 {
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+    font-size: 24px;
+    color: #2b2f4c;
+    text-align: center;
+    font-style: italic;
+}
