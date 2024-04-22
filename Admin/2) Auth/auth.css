@@ -1,0 +1,98 @@
+/* Sign In */
+input[type=checkbox], input[type=radio] {
+    border: 1px solid #b4b9be;
+    background: #fff;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 16px;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    transition: .05s border-color ease-in-out;
+}
+.custom-control-label {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 1.8;
+}
+/* Password Change */
+.bg-sign {
+    background: #f55d2c;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9))
+}
+
+#layoutAuthentication {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#layoutAuthentication #layoutAuthentication_content {
+    min-width: 0;
+    flex-grow: 1;
+}
+
+#layoutAuthentication #layoutAuthentication_footer {
+    min-width: 0;
+}
+
+.card-sign-header {
+    background-color: #f9f9f9f9 !important;
+    border-bottom: 1px solid #efefef !important;
+}
+.card-sign-header h3 {
+    font-weight: 600 !important;
+    color: #2b2f4c;
+}
+.font-weight-light {
+    font-weight: 300 !important;
+}
+.form-group {
+    margin-top: 20px;
+}
+.form-label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #2b2f4c;
+    margin-bottom: 10px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.form-control {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #2b2f4c !important;
+    border-radius: 3px !important;
+    border: 1px solid #efefef !important;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
+}
+.form-control:focus {
+    border: 1px solid #e5e5e5 !important;
+}
+.form-group:last-child {
+    margin-bottom: 0;
+}
+.btn-sign {
+    color: #fff !important;
+    background-color: #f55d2c !important;
+    border-color: 0 !important;
+    width: 100% !important;
+}
