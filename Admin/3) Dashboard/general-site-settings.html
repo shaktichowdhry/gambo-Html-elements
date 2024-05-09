@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Overview</title>
+    <link rel="stylesheet" href="../Common-styles/universal.css" />
+    <link rel="stylesheet" href="../Common-styles/customer-styles.css" />
+    <link rel="stylesheet" href="./Dashboard.css" />
+    <link rel="stylesheet" href="./sidenav.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>       -->
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+
+                        <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseAreas" aria-expanded="false" aria-controls="collapseAreas">
+                            <div class="sb-nav-link-icon"><i class="fas fa-map-marked-alt"></i></div>
+                            Locations
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseAreas" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link sub_nav_link" href="areas.html">All Areas</a>
+                                <a class="nav-link sub_nav_link" href="add_area.html">Add Area</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCategories"
+                            aria-expanded="true" aria-controls="collapseCategories">
+                            <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+                            Categories
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse show" id="collapseCategories" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link sub_nav_link " href="category.html">All Categories</a>
+                                <a class="nav-link sub_nav_link" href="add_category.html">Add Category</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseShops"
+                            aria-expanded="false" aria-controls="collapseShops">
+                            <div class="sb-nav-link-icon"><i class="fas fa-store"></i></div>
+                            Shops
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseShops" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link sub_nav_link" href="shops.html">All Shops</a>
+                                <a class="nav-link sub_nav_link" href="add_shop.html">Add Shop</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseProducts" aria-expanded="false" aria-controls="collapseProducts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
+                            Products
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseProducts" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link sub_nav_link" href="products.html">All Products</a>
+                                <a class="nav-link sub_nav_link" href="add_product.html">Add Product</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="orders.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-cart-arrow-down"></i></div>
+                            Orders
+                        </a>
+                        <a class="nav-link" href="customers.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                            Customers
+                        </a>
+                        <a class="nav-link" href="offers.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-gift"></i></div>
+                            Offers
+                        </a>
+                        <a class="nav-link" href="pages.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Pages
+                        </a>
+                        <a class="nav-link" href="menu.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-layer-group"></i></div>
+                            Menu
+                        </a>
+                        <a class="nav-link collapsed active" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSettings" aria-expanded="false" aria-controls="collapseSettings">
+                            <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
+                            Setting
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseSettings" aria-labelledby="headingTwo"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link sub_nav_link active" href="general_setting.html">General Settings</a>
+                                <a class="nav-link sub_nav_link" href="payment_setting.html">Payment Settings</a>
+                                <a class="nav-link sub_nav_link" href="email_setting.html">Email Settings</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="reports.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-bar"></i></div>
+                            Reports
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- content -->
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h2 class="mt-30 page-title">General Setting</h2>
+                    <ol class="breadcrumb mb-30">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item active">General Setting</li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="left-side-tabs">
+                                <div class="dashboard-left-links">
+                                    <a href="general_setting.html" class="user-item active"><i
+                                            class="fas fa-cogs"></i>Site Setting</a>
+                                    <a href="general_setting_logo.html" class="user-item"><i
+                                            class="far fa-image"></i>Logo</a>
+                                    <a href="general_setting_favicon.html" class="user-item"><i
+                                            class="far fa-image"></i>Favicon</a>
+                                    <a href="general_setting_analytics.html" class="user-item"><i
+                                            class="fas fa-chart-line"></i>Google Analytics</a>
+                                    <a href="general_setting_contact.html" class="user-item"><i
+                                            class="fas fa-briefcase"></i>Contact Setting</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-6">
+                            <div class="card card-static-2 mb-30">
+                                <div class="card-title-2">
+                                    <h4>Site Setting</h4>
+                                </div>
+                                <div class="card-body-table">
+                                    <div class="news-content-right pd-20">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label">Site Name*</label>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label">Site Title*</label>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label">Site Description*</label>
+                                                    <div class="card card-editor">
+                                                        <div class="content-editor">
+                                                            <textarea class="text-control" placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label">Site Keywords*</label>
+                                                    <div class="card card-editor">
+                                                        <div class="content-editor">
+                                                            <textarea class="text-control" placeholder=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label">Timezone*</label>
+                                                    <select id="timezone" name="timezone" class="form-control">
+                                                        <option timezoneid="1" gmtadjustment="GMT-12:00"
+                                                            usedaylighttime="0" value="-12">(GMT-12:00) International
+                                                            Date Line West</option>
+                                                        <option timezoneid="2" gmtadjustment="GMT-11:00"
+                                                            usedaylighttime="0" value="-11">(GMT-11:00) Midway Island,
+                                                            Samoa</option>
+                                                        <option timezoneid="3" gmtadjustment="GMT-10:00"
+                                                            usedaylighttime="0" value="-10">(GMT-10:00) Hawaii</option>
+                                                        <option timezoneid="4" gmtadjustment="GMT-09:00"
+                                                            usedaylighttime="1" value="-9">(GMT-09:00) Alaska</option>
+                                                        <option timezoneid="5" gmtadjustment="GMT-08:00"
+                                                            usedaylighttime="1" value="-8">(GMT-08:00) Pacific Time (US
+                                                            &amp; Canada)</option>
+                                                        <option timezoneid="6" gmtadjustment="GMT-08:00"
+                                                            usedaylighttime="1" value="-8">(GMT-08:00) Tijuana, Baja
+                                                            California</option>
+                                                        <option timezoneid="7" gmtadjustment="GMT-07:00"
+                                                            usedaylighttime="0" value="-7">(GMT-07:00) Arizona</option>
+                                                        <option timezoneid="8" gmtadjustment="GMT-07:00"
+                                                            usedaylighttime="1" value="-7">(GMT-07:00) Chihuahua, La
+                                                            Paz, Mazatlan</option>
+                                                        <option timezoneid="9" gmtadjustment="GMT-07:00"
+                                                            usedaylighttime="1" value="-7">(GMT-07:00) Mountain Time (US
+                                                            &amp; Canada)</option>
+                                                        <option timezoneid="10" gmtadjustment="GMT-06:00"
+                                                            usedaylighttime="0" value="-6">(GMT-06:00) Central America
+                                                        </option>
+                                                        <option timezoneid="11" gmtadjustment="GMT-06:00"
+                                                            usedaylighttime="1" value="-6">(GMT-06:00) Central Time (US
+                                                            &amp; Canada)</option>
+                                                        <option timezoneid="12" gmtadjustment="GMT-06:00"
+                                                            usedaylighttime="1" value="-6">(GMT-06:00) Guadalajara,
+                                                            Mexico City, Monterrey</option>
+                                                        <option timezoneid="13" gmtadjustment="GMT-06:00"
+                                                            usedaylighttime="0" value="-6">(GMT-06:00) Saskatchewan
+                                                        </option>
+                                                        <option timezoneid="14" gmtadjustment="GMT-05:00"
+                                                            usedaylighttime="0" value="-5">(GMT-05:00) Bogota, Lima,
+                                                            Quito, Rio Branco</option>
+                                                        <option timezoneid="15" gmtadjustment="GMT-05:00"
+                                                            usedaylighttime="1" value="-5">(GMT-05:00) Eastern Time (US
+                                                            &amp; Canada)</option>
+                                                        <option timezoneid="16" gmtadjustment="GMT-05:00"
+                                                            usedaylighttime="1" value="-5">(GMT-05:00) Indiana (East)
+                                                        </option>
+                                                        <option timezoneid="17" gmtadjustment="GMT-04:00"
+                                                            usedaylighttime="1" value="-4">(GMT-04:00) Atlantic Time
+                                                            (Canada)</option>
+                                                        <option timezoneid="18" gmtadjustment="GMT-04:00"
+                                                            usedaylighttime="0" value="-4">(GMT-04:00) Caracas, La Paz
+                                                        </option>
+                                                        <option timezoneid="19" gmtadjustment="GMT-04:00"
+                                                            usedaylighttime="0" value="-4">(GMT-04:00) Manaus</option>
+                                                        <option timezoneid="20" gmtadjustment="GMT-04:00"
+                                                            usedaylighttime="1" value="-4">(GMT-04:00) Santiago</option>
+                                                        <option timezoneid="21" gmtadjustment="GMT-03:30"
+                                                            usedaylighttime="1" value="-3.5">(GMT-03:30) Newfoundland
+                                                        </option>
+                                                        <option timezoneid="22" gmtadjustment="GMT-03:00"
+                                                            usedaylighttime="1" value="-3">(GMT-03:00) Brasilia</option>
+                                                        <option timezoneid="23" gmtadjustment="GMT-03:00"
+                                                            usedaylighttime="0" value="-3">(GMT-03:00) Buenos Aires,
+                                                            Georgetown</option>
+                                                        <option timezoneid="24" gmtadjustment="GMT-03:00"
+                                                            usedaylighttime="1" value="-3">(GMT-03:00) Greenland
+                                                        </option>
+                                                        <option timezoneid="25" gmtadjustment="GMT-03:00"
+                                                            usedaylighttime="1" value="-3">(GMT-03:00) Montevideo
+                                                        </option>
+                                                        <option timezoneid="26" gmtadjustment="GMT-02:00"
+                                                            usedaylighttime="1" value="-2">(GMT-02:00) Mid-Atlantic
+                                                        </option>
+                                                        <option timezoneid="27" gmtadjustment="GMT-01:00"
+                                                            usedaylighttime="0" value="-1">(GMT-01:00) Cape Verde Is.
+                                                        </option>
+                                                        <option timezoneid="28" gmtadjustment="GMT-01:00"
+                                                            usedaylighttime="1" value="-1">(GMT-01:00) Azores</option>
+                                                        <option timezoneid="29" gmtadjustment="GMT+00:00"
+                                                            usedaylighttime="0" value="0">(GMT+00:00) Casablanca,
+                                                            Monrovia, Reykjavik</option>
+                                                        <option timezoneid="30" gmtadjustment="GMT+00:00"
+                                                            usedaylighttime="1" value="0">(GMT+00:00) Greenwich Mean
+                                                            Time : Dublin, Edinburgh, Lisbon, London</option>
+                                                        <option timezoneid="31" gmtadjustment="GMT+01:00"
+                                                            usedaylighttime="1" value="1">(GMT+01:00) Amsterdam, Berlin,
+                                                            Bern, Rome, Stockholm, Vienna</option>
+                                                        <option timezoneid="32" gmtadjustment="GMT+01:00"
+                                                            usedaylighttime="1" value="1">(GMT+01:00) Belgrade,
+                                                            Bratislava, Budapest, Ljubljana, Prague</option>
+                                                        <option timezoneid="33" gmtadjustment="GMT+01:00"
+                                                            usedaylighttime="1" value="1">(GMT+01:00) Brussels,
+                                                            Copenhagen, Madrid, Paris</option>
+                                                        <option timezoneid="34" gmtadjustment="GMT+01:00"
+                                                            usedaylighttime="1" value="1">(GMT+01:00) Sarajevo, Skopje,
+                                                            Warsaw, Zagreb</option>
+                                                        <option timezoneid="35" gmtadjustment="GMT+01:00"
+                                                            usedaylighttime="1" value="1">(GMT+01:00) West Central
+                                                            Africa</option>
+                                                        <option timezoneid="36" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="1" value="2">(GMT+02:00) Amman</option>
+                                                        <option timezoneid="37" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="1" value="2">(GMT+02:00) Athens, Bucharest,
+                                                            Istanbul</option>
+                                                        <option timezoneid="38" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="1" value="2">(GMT+02:00) Beirut</option>
+                                                        <option timezoneid="39" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="1" value="2">(GMT+02:00) Cairo</option>
+                                                        <option timezoneid="40" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="0" value="2">(GMT+02:00) Harare, Pretoria
+                                                        </option>
+                                                        <option timezoneid="41" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="1" value="2">(GMT+02:00) Helsinki, Kyiv,
+                                                            Riga, Sofia, Tallinn, Vilnius</option>
+                                                        <option timezoneid="42" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="1" value="2">(GMT+02:00) Jerusalem</option>
+                                                        <option timezoneid="43" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="1" value="2">(GMT+02:00) Minsk</option>
+                                                        <option timezoneid="44" gmtadjustment="GMT+02:00"
+                                                            usedaylighttime="1" value="2">(GMT+02:00) Windhoek</option>
+                                                        <option timezoneid="45" gmtadjustment="GMT+03:00"
+                                                            usedaylighttime="0" value="3">(GMT+03:00) Kuwait, Riyadh,
+                                                            Baghdad</option>
+                                                        <option timezoneid="46" gmtadjustment="GMT+03:00"
+                                                            usedaylighttime="1" value="3">(GMT+03:00) Moscow, St.
+                                                            Petersburg, Volgograd</option>
+                                                        <option timezoneid="47" gmtadjustment="GMT+03:00"
+                                                            usedaylighttime="0" value="3">(GMT+03:00) Nairobi</option>
+                                                        <option timezoneid="48" gmtadjustment="GMT+03:00"
+                                                            usedaylighttime="0" value="3">(GMT+03:00) Tbilisi</option>
+                                                        <option timezoneid="49" gmtadjustment="GMT+03:30"
+                                                            usedaylighttime="1" value="3.5">(GMT+03:30) Tehran</option>
+                                                        <option timezoneid="50" gmtadjustment="GMT+04:00"
+                                                            usedaylighttime="0" value="4">(GMT+04:00) Abu Dhabi, Muscat
+                                                        </option>
+                                                        <option timezoneid="51" gmtadjustment="GMT+04:00"
+                                                            usedaylighttime="1" value="4">(GMT+04:00) Baku</option>
+                                                        <option timezoneid="52" gmtadjustment="GMT+04:00"
+                                                            usedaylighttime="1" value="4">(GMT+04:00) Yerevan</option>
+                                                        <option timezoneid="53" gmtadjustment="GMT+04:30"
+                                                            usedaylighttime="0" value="4.5">(GMT+04:30) Kabul</option>
+                                                        <option timezoneid="54" gmtadjustment="GMT+05:00"
+                                                            usedaylighttime="1" value="5">(GMT+05:00) Yekaterinburg
+                                                        </option>
+                                                        <option timezoneid="55" gmtadjustment="GMT+05:00"
+                                                            usedaylighttime="0" value="5">(GMT+05:00) Islamabad,
+                                                            Karachi, Tashkent</option>
+                                                        <option timezoneid="56" gmtadjustment="GMT+05:30"
+                                                            usedaylighttime="0" value="5.5">(GMT+05:30) Sri
+                                                            Jayawardenapura</option>
+                                                        <option timezoneid="57" gmtadjustment="GMT+05:30"
+                                                            usedaylighttime="0" value="5.5" selected="">(GMT+05:30)
+                                                            Chennai, Kolkata, Mumbai, New Delhi</option>
+                                                        <option timezoneid="58" gmtadjustment="GMT+05:45"
+                                                            usedaylighttime="0" value="5.75">(GMT+05:45) Kathmandu
+                                                        </option>
+                                                        <option timezoneid="59" gmtadjustment="GMT+06:00"
+                                                            usedaylighttime="1" value="6">(GMT+06:00) Almaty,
+                                                            Novosibirsk</option>
+                                                        <option timezoneid="60" gmtadjustment="GMT+06:00"
+                                                            usedaylighttime="0" value="6">(GMT+06:00) Astana, Dhaka
+                                                        </option>
+                                                        <option timezoneid="61" gmtadjustment="GMT+06:30"
+                                                            usedaylighttime="0" value="6.5">(GMT+06:30) Yangon (Rangoon)
+                                                        </option>
+                                                        <option timezoneid="62" gmtadjustment="GMT+07:00"
+                                                            usedaylighttime="0" value="7">(GMT+07:00) Bangkok, Hanoi,
+                                                            Jakarta</option>
+                                                        <option timezoneid="63" gmtadjustment="GMT+07:00"
+                                                            usedaylighttime="1" value="7">(GMT+07:00) Krasnoyarsk
+                                                        </option>
+                                                        <option timezoneid="64" gmtadjustment="GMT+08:00"
+                                                            usedaylighttime="0" value="8">(GMT+08:00) Beijing,
+                                                            Chongqing, Hong Kong, Urumqi</option>
+                                                        <option timezoneid="65" gmtadjustment="GMT+08:00"
+                                                            usedaylighttime="0" value="8">(GMT+08:00) Kuala Lumpur,
+                                                            Singapore</option>
+                                                        <option timezoneid="66" gmtadjustment="GMT+08:00"
+                                                            usedaylighttime="0" value="8">(GMT+08:00) Irkutsk, Ulaan
+                                                            Bataar</option>
+                                                        <option timezoneid="67" gmtadjustment="GMT+08:00"
+                                                            usedaylighttime="0" value="8">(GMT+08:00) Perth</option>
+                                                        <option timezoneid="68" gmtadjustment="GMT+08:00"
+                                                            usedaylighttime="0" value="8">(GMT+08:00) Taipei</option>
+                                                        <option timezoneid="69" gmtadjustment="GMT+09:00"
+                                                            usedaylighttime="0" value="9">(GMT+09:00) Osaka, Sapporo,
+                                                            Tokyo</option>
+                                                        <option timezoneid="70" gmtadjustment="GMT+09:00"
+                                                            usedaylighttime="0" value="9">(GMT+09:00) Seoul</option>
+                                                        <option timezoneid="71" gmtadjustment="GMT+09:00"
+                                                            usedaylighttime="1" value="9">(GMT+09:00) Yakutsk</option>
+                                                        <option timezoneid="72" gmtadjustment="GMT+09:30"
+                                                            usedaylighttime="0" value="9.5">(GMT+09:30) Adelaide
+                                                        </option>
+                                                        <option timezoneid="73" gmtadjustment="GMT+09:30"
+                                                            usedaylighttime="0" value="9.5">(GMT+09:30) Darwin</option>
+                                                        <option timezoneid="74" gmtadjustment="GMT+10:00"
+                                                            usedaylighttime="0" value="10">(GMT+10:00) Brisbane</option>
+                                                        <option timezoneid="75" gmtadjustment="GMT+10:00"
+                                                            usedaylighttime="1" value="10">(GMT+10:00) Canberra,
+                                                            Melbourne, Sydney</option>
+                                                        <option timezoneid="76" gmtadjustment="GMT+10:00"
+                                                            usedaylighttime="1" value="10">(GMT+10:00) Hobart</option>
+                                                        <option timezoneid="77" gmtadjustment="GMT+10:00"
+                                                            usedaylighttime="0" value="10">(GMT+10:00) Guam, Port
+                                                            Moresby</option>
+                                                        <option timezoneid="78" gmtadjustment="GMT+10:00"
+                                                            usedaylighttime="1" value="10">(GMT+10:00) Vladivostok
+                                                        </option>
+                                                        <option timezoneid="79" gmtadjustment="GMT+11:00"
+                                                            usedaylighttime="1" value="11">(GMT+11:00) Magadan, Solomon
+                                                            Is., New Caledonia</option>
+                                                        <option timezoneid="80" gmtadjustment="GMT+12:00"
+                                                            usedaylighttime="1" value="12">(GMT+12:00) Auckland,
+                                                            Wellington</option>
+                                                        <option timezoneid="81" gmtadjustment="GMT+12:00"
+                                                            usedaylighttime="0" value="12">(GMT+12:00) Fiji, Kamchatka,
+                                                            Marshall Is.</option>
+                                                        <option timezoneid="82" gmtadjustment="GMT+13:00"
+                                                            usedaylighttime="0" value="13">(GMT+13:00) Nuku'alofa
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <button class="save-btn hover-btn" type="submit">Save Changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-footer mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted-1">© 2024 <b>Gambo Supermarket</b>. by <a
+                                href="https://themeforest.net/user/gambolthemes">Gambolthemes</a></div>
+                        <div class="footer-links">
+                            <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/privacy_policy.html">Privacy
+                                Policy</a>
+                            <a
+                                href="http://gambolthemes.net/html-items/gambo_supermarket_demo/term_and_conditions.html">Terms
+                                &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../assets/scripts.js"></script>
+    <script src="../assets/chart.js"></script>
+</body>
+
+</html>
